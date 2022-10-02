@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <title>Contact | Akshat</title>
+</head>
+<style>
+    #main{
+        background-color:rgba(0, 0, 0, 0.921);
+        color: white;
+    }
+</style>
+<body>
+    <header class="text-white font-bold body-font bg-black">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+           <img class="w-10 h-12" src="A logo.png" alt="">
+            <span class="ml-3 text-2xl text-white animate-pulse">Akshat Raj Bharti</span>
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-9 hover:text-blue-400 hover:cursor-pointer hover:animate-pulse" href="index.html">About</a>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle mr-9 hover:text-blue-400 hover:cursor-pointer hover:animate-pulse" type="button" data-bs-toggle="dropdown" aria-expanded="false">Certificates</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="certificates.html">Certificates</a></li>
+                <li><a class="dropdown-item" href="#">Letter of Edu4ol</a></li>
+                <li><a class="dropdown-item" href="#">Letter of The Sparks Foudation</a></li>
+                <li><a class="dropdown-item" href="#">Letter of UX-ProdX</a></li>
+              </ul>
+            </div>
+            <a class="mr-9 hover:text-blue-400 hover:cursor-pointer hover:animate-pulse" href="contact.html">Contact</a>
+            <a class="mr-9 hover:text-blue-400 hover:cursor-pointer hover:animate-pulse" href="Akshat Resume.pdf">Resume</a>
+            <a class="mr-9 hover:text-blue-400 hover:cursor-pointer hover:animate-pulse" href="portfolio.html">Portfolio</a>
+          </nav>     
+        </div>
+      </header>
+
+      <div id="main">
+
+        <p class="text-center text-4xl font-bold py-10">Contact Me</p>
+        <form action="https://formspree.io/f/xayvrbvz"method="POST">
+      <section class="text-white body-font relative">
+        <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+          <div class="lg:w-2/3 md:w-1/2 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+            <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/dir//Pilibhit,+Uttar+Pradesh/@28.6266623,79.7993943,15.08z/data=!4m8!4m7!1m0!1m5!1m1!1s0x39a03f1389ce2003:0x9b73320ef48baac0!2m2!1d79.8075272!2d28.62494" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+            <div class=" relative flex flex-wrap py-6 rounded shadow-md">
+              <div class="lg:w-1/2 px-6">
+                <h2 class="title-font font-semibold text-white tracking-widest text-xs">ADDRESS</h2>
+                <p class="mt-1">Pilibhit, 262001</p><br>Uttar Pradesh
+              </div>
+              <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                <h2 class="title-font font-semibold text-white tracking-widest text-xs">EMAIL</h2>
+                <a class="text-blue-400 font-bold leading-relaxed">akshatraj2627@email.com</a>
+                <h2 class="title-font font-semibold text-white tracking-widest text-xs mt-4">LinkedIn</h2>
+                <a class="leading-relaxed hover:animate-pulse text-blue-400 font-extrabold" href="https://www.linkedin.com/in/akshat-raj-bharti-23385420b/" target="_blank">https://www.linkedin.com/in/akshat-raj-bharti-23385420b/</a>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+            <h2 class="text-white text-lg mb-1 font-medium title-font">Feedback</h2>
+            <p class="leading-relaxed mb-5 text-white">You can contact me here as well as </p>
+            <div class="relative mb-4">
+              <label for="name" class="leading-7 text-sm text-white">Name</label>
+              <input type="text" id="name" name="name" class="w-full rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-blue-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+            </div>
+            <div class="relative mb-4">
+              <label for="email" class="leading-7 text-sm text-white">Email</label>
+              <input type="email" id="email" name="email" class="w-full rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-blue-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+            </div>
+            <div class="relative mb-4">
+              <label for="message" class="leading-7 text-sm text-white">Message</label>
+              <textarea id="message" name="message" class="w-full rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-blue-800 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" required></textarea>
+            </div>
+            <button class="text-white bg-blue-400 border-0 py-2 px-6 focus:outline-none  rounded text-lg">Submit</button><br>
+            <button class="text-white bg-blue-400 border-0 py-2 px-6 focus:outline-none  rounded text-lg">Contact on Github</button>
+            <p class="text-sm text-center text-gray-500 mt-3">Get in touch with you shortly.</p>
+          </div>
+        </div>
+      </section>
+      </form>
+    </div>
+</body>
+</html>

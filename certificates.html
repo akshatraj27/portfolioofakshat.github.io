@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+  #main{
+    background-color: rgba(0, 0, 0, 0.921);
+    height: 2000px;
+    color: white;
+  }
+</style>
+<body>
+    <header class="text-white font-bold body-font bg-black">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+           <img class="w-10 h-12" src="A logo.png" alt="">
+            <span class="ml-3 text-2xl text-white animate-pulse">Akshat Raj Bharti</span>
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-9 hover:text-blue-400 hover:cursor-pointer hover:animate-pulse" href="index.html">About</a>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle mr-9 hover:text-blue-400 hover:cursor-pointer hover:animate-pulse" type="button" data-bs-toggle="dropdown" aria-expanded="false">Certificates</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="certificates.html">Certificates</a></li>
+                <li><a class="dropdown-item" href="edu4ol.html">Letter of Edu4ol</a></li>
+                <li><a class="dropdown-item" href="sparks.html">Letter of The Sparks Foudation</a></li>
+                <li><a class="dropdown-item" href="ux.html">Letter of UX-ProdX</a></li>
+              </ul>
+            </div>
+            <a class="mr-9 hover:text-blue-400 hover:cursor-pointer hover:animate-pulse" href="contact.html">Contact</a>
+            <a class="mr-9 hover:text-blue-400 hover:cursor-pointer hover:animate-pulse" href="Akshat Resume.pdf">Resume</a>
+            <a class="mr-9 hover:text-blue-400 hover:cursor-pointer hover:animate-pulse" href="portfolio.html">Portfolio</a>
+          </nav>     
+        </div>
+      </header>
+
+      <div id="main">
+
+    <div class="" id="backgroundcerti">
+        <p class="text-center text-4xl font-bold py-10">Certifications</p>
+
+        <div class="w3-content w3-display-container my-10" id="colour">
+          <img class="mySlides" src="Certificates/udemy.jpg" style="width:100%">
+          <img class="mySlides" src="Certificates/Wordpress.jpg" style="width:100%">
+          <img class="mySlides" src="Certificates/Freecodecamp.jpg" style="width:100%">
+          <img class="mySlides" src="Certificates/Great Learning HTML.jpg" style="width:100%">
+          <img class="mySlides" src="Certificates/html course_page-0001.jpg" style="width:100%">
+          <img class="mySlides" src="Certificates/Great Learning CSS Certificate.jpg" style="width:80%">
+          <img class="mySlides" src="Certificates/CSS intermediate.jpg" style="width:100%">
+          <img class="mySlides" src="Certificates/Web Development Training - Certificate of Completion_page-0001.jpg" style="width:100%">
+          <img class="mySlides" src="Certificates/Certificate for Akshat Raj Bharti for _IEEE Xplore Assignment__page-0001.jpg" style="width:100%">
+          <img class="mySlides" src="Certificates/8088-Power Excel Certificate 1688.jpeg" style="width:100%">
+        
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        <p class="text-xl text-center">This is the small achievements</p><br><br>
+      </div>
+
+    </div>
+</body>
+<script>
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</html>
